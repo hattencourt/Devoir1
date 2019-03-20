@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} Ajouter Un Utilisateur {% endblock %}
+       
+{% block contenu %} <h1> Veuillez Saisir le formulaire ci dessous : </h1> 
+
+  <form class="form-signin" action="index.php?page=adduser" method="post"
+enctype="application/x-www-form-urlencoded">
+      
+ <h1 class="h3 mb-3 font-weight-normal">Formulaire d'inscription</h1>
+ 
+ <label for="id" class="sr-only">Id:</label>
+ <input type="number" id="id" name="id" class="form-control"
+placeholder="id" required autofocus>
+ 
+ <label for="nom" class="sr-only">Nom :</label>
+ <input type="text" id="nom" name="nom" class="form-control"
+placeholder="Nom :" required>
+ 
+ <label for="prenom" class="sr-only">Prénom:</label>
+ <input type="text" id="prenom" name="prenom" class="form-control"
+placeholder="Prenom :" required>
+ 
+ <label for="adresse" class="sr-only">Adresse:</label>
+ <input type="text" id="adresse" name="adresse" class="form-control"
+placeholder="Adresse :" required>
+ 
+ <label for="cp" class="sr-only">Cp:</label>
+ <input type="text" id="cp" name="cp" class="form-control"
+placeholder="Code postal :" required>
+
+ <label for="ville" class="sr-only"> Ville:</label>
+ <input type="text" id="ville" name="ville" class="form-control"
+placeholder="Ville : " required>
+ 
+ 
+ <button class="btn btn-lg btn-primary btn-block" type="submit"
+name="btInscrire">S'inscrire</button>
+
+ </form>
+    
+    
+    
+    
+{% endblock %} 
